@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, #3d002f, #150013);
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow {
+    background: rgba(255, 192, 203, 0.5);
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(255, 105, 180, 0.8);
+}
+
+.image-container {
+    position: absolute;
+    top: 25%;
+    width: 350px;
+    height: 250px;
+    display: none; /* La imagen estará oculta al inicio */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
